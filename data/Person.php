@@ -5,8 +5,12 @@
     var ?string $address = null;
     var string $country = "Indonesia";
 
-    function sayHello(string $name)
+    function sayHello(?string $name)
     {
-      echo "Hello $name" . PHP_EOL;
+      if(is_null($name)){
+        echo "Hi, my name is $this->name" . PHP_EOL;
+      }else{
+        echo "Hello $name, my name is $this->name" . PHP_EOL;
+      }
     }
   }
