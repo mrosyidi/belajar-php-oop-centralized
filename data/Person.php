@@ -1,7 +1,7 @@
 <?php
   class Person
   {
-    var $name;
-    var $address;
-    var $country;
+    var string $name;
+    var string $address;
+    var string $country;
   }
