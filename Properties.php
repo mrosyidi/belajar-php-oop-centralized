@@ -12,5 +12,5 @@
 
   $person2 = new Person();
   $person2->name = "Budi";
-  $person2->address = "Jakarta";
+  $person2->address = null;
   var_dump($person2);
