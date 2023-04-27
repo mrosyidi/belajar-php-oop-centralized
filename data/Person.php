@@ -1,6 +1,7 @@
 <?php
   class Person
   {
+    const AUTHOR = "Programmer Zaman Now";
     var string $name;
     var ?string $address = null;
     var string $country = "Indonesia";
