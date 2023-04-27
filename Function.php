@@ -8,3 +8,6 @@
   $joko = new Person();
   $joko->name = "Joko";
   $joko->sayHello(null);
+
+  $eko->info();
+  $joko->info();
