@@ -4,6 +4,16 @@
     {
 
     }
+
+    class Sample
+    {
+
+    }
+
+    class Dummy
+    {
+
+    }
   }
 
   namespace Data\Two{
