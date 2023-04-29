@@ -1,8 +1,8 @@
 <?php
   class Product
   {
-    private string $name;
-    private int $price;
+    protected string $name;
+    protected int $price;
 
     public function __construct(string $name, int $price)
     {
@@ -18,5 +18,14 @@
     public function getPrice(): int
     {
       return $this->price;
+    }
+  }
+
+  class ProductDummy extends Product
+  {
+    public function info()
+    {
+      echo "Name $this->name" . PHP_EOL;
+      echo "Price $this->price" . PHP_EOL;
     }
   }
