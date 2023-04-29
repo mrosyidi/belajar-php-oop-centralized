@@ -11,5 +11,8 @@
 
   class VicePresident extends Manager
   {
-
+    function sayHello(string $name): void
+    {
+      echo "Hi $name, my name is VP $this->name" . PHP_EOL;
+    }
   }
