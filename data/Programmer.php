@@ -17,3 +17,8 @@
   {
     public Programmer $programmer;
   }
+
+  function sayHelloProgrammer(Programmer $programmer)
+  {
+    echo "Hello $programmer->name" . PHP_EOL;
+  }
