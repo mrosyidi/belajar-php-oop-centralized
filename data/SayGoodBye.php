@@ -25,7 +25,12 @@
     }
   }
 
+  trait HasName
+  {
+    public string $name;
+  }
+
   class Person
   {
-    use SayGoodBye, SayHello;
+    use SayGoodBye, SayHello, HasName;
   }
