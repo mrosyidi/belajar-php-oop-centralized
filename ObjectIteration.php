@@ -8,14 +8,10 @@
 
     public function getIterator()
     {
-      $array = [
-        "first" => $this->first,
-        "second" => $this->second,
-        "third" => $this->third,
-        "fourth" => $this->fourth
-      ];
-
-      return new ArrayIterator($array);
+      yield "first" => $this->first;
+      yield "second" => $this->second;
+      yield "third" => $this->third;
+      yield "fourth" => $this->fourth;
     }
   }
 
