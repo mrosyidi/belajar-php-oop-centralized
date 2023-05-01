@@ -4,4 +4,10 @@
     public string $id;
     public string $name;
     public int $value;
+    private string $sample;
+
+    public function setSample(string $sample): void
+    {
+      $this->sample = $sample;
+    }
   }
