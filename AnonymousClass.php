@@ -4,11 +4,18 @@
     function sayHello(): void;
   }
 
-  $helloWorld = new class implements HelloWorld
+  $helloWorld = new class("Eko") implements HelloWorld
   {
+    public string $name;
+
+    public function __construct(string $name)
+    {
+      $this->name = $name;
+    }
+
     function sayHello(): void
     {
-      echo "Hello World" . PHP_EOL;
+      echo "Hello $this->name" . PHP_EOL;
     }
   };
 
