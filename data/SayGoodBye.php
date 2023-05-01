@@ -43,4 +43,14 @@
     {
       echo "Person $this->name is running" . PHP_EOL;
     }
+
+    public function goodBye(?string $name): void
+    {
+      echo "Good bye in Person" . PHP_EOL;
+    }
+
+    public function hello(?string $name): void
+    {
+      echo "Hello in Person" . PHP_EOL;
+    }
   }
