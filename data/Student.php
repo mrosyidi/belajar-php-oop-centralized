@@ -15,4 +15,9 @@
     {
       unset($this->sample);
     }
+
+    public function __toString(): string
+    {
+      return "Student id:$this->id, name:$this->name, value:$this->value";
+    }
   }
