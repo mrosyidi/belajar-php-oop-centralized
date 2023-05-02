@@ -10,4 +10,9 @@
     {
       $this->sample = $sample;
     }
+
+    public function __clone()
+    {
+      unset($this->sample);
+    }
   }
