@@ -12,3 +12,6 @@
   var_dump($now);
   $now->setTimeZone(new DateTimeZone("Asia/Jakarta"));
   var_dump($now);
+
+  $string = $now->format("Y-m-d H:i:s");
+  echo "Waktu Saat ini : $string" . PHP_EOL;
