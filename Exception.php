@@ -4,7 +4,11 @@
   require_once "helper/Validation.php";
 
   $loginRequest = new LoginRequest();
-  $loginRequest->username = "eko";
-  $loginRequest->password = "eko";
-  validateLoginRequest($loginRequest);
+
+  try{
+    validateLoginRequest($loginRequest);
+  }catch(ValidationException $exception){
+    echo "Validation Error : {$exception->getMessage()}" . PHP_EOL;
+  }
+
   echo "VALID" . PHP_EOL;
