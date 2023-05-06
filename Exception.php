@@ -9,9 +9,7 @@
 
   try{
     validateLoginRequest($loginRequest);
-  }catch(ValidationException $exception){
-    echo "Validation Error : {$exception->getMessage()}" . PHP_EOL;
-  }catch(Exception $exception){
+  }catch(ValidationException | Exception $exception){
     echo "Error : {$exception->getMessage()}" . PHP_EOL;
   }
 
