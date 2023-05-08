@@ -5,6 +5,20 @@
 
   $request = new LoginRequest();
   $request->username = "eko";
-  $request->password = "eko";
-  
-  ValidationUtil::validate($request);
+  $request->password = "rahasia";
+
+  ValidationUtil::validateReflection($request);
+
+  class RegisterUserRequest
+  {
+    public ?string $name;
+    public ?string $address;
+    public ?string $email;
+  }
+
+  $register = new RegisterUserRequest();
+  $register->name = "Eko";
+  $register->address = "Subang";
+  $register->email = "eko@gmail.com";
+
+  ValidationUtil::validateReflection($register);
